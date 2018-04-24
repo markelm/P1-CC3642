@@ -8,6 +8,7 @@ using namespace std;
 class Veiculo
 {
 	protected:
+		bool fab;//Indicativo de fabrica
 		int g_factor;//Parametro para determinar qual veiculo sobrevive na colisao
 		int velocidade;//velocidade
 		int pos_x;//posicao no eixo horizontal do mapa
@@ -15,10 +16,19 @@ class Veiculo
 	public:
 		Veiculo(int a, int b)//construtor Veiculo
 		{
+			fab = true;
 			velocidade = 1;
 			pos_x = a;
 			pos_y = b;
 
+		}
+		void setFab(bool a)//define o indicativo de fabrica
+		{
+			this->fab = a;
+		}
+		bool getFab()//obtem o indicativo de fabrica
+		{
+			return this->fab;
 		}
 		int getPos_y()//Obter posicao no eixo y
 		{
