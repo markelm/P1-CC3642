@@ -1,2 +1,0 @@
-O arquivo P1.cpp tem o codigo completo porem ha um erro que impede que seja observado o funcionamento.
-No arquivo P1c.cpp esse erros constam como comentario para que se possa observar o funcionamento dos objetos no mapa, porem a destruicao e criacao dos veiculos nao funciona neste.
